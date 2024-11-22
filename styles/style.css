@@ -3,22 +3,9 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
+  padding: 0;
 }
-
-
-
-
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
-}
-
 
 
 
@@ -28,4 +15,147 @@
 /****************/
 
 /* jouw code */
+
+body {
+	background-color: rgb(21, 21, 29);
+	color: white;
+}
+
+/* Header */
+
+header {
+	
+	top: 0;
+	background-color: rgb(21, 21, 29);
+}
+
+li {
+	list-style-type: none;
+}
+
+header ul:first-of-type li:nth-of-type(2) img {
+	width: 155px;
+}
+
+header ul:nth-of-type(1) {
+	display: flex;
+	justify-content: space-between;
+	margin: 1% 2% 0 2%;
+	padding: 1em 1em 0.6em 1em;
+	border-bottom: solid 0.1px white;
+}
+
+header nav ul:first-of-type {
+	border-bottom: none;
+	display: flex;
+	flex-direction: column;
+}
+
+header nav ul:first-of-type li {
+	margin: 2%;
+}
+
+header nav ul:nth-of-type(2) {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2em 0 2em 0;
+}
+
+header nav ul:nth-of-type(2) li {
+	margin: 2%;
+}
+
+header nav ul:nth-of-type(2) li button {
+	width: 100%;
+}
+
+header nav ul:nth-of-type(2) li:first-of-type button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	color: rgb(21, 21, 29);
+	width: 330px;
+	height: 50px;
+	margin: 2%;
+	border-radius: 72px;
+}
+
+header nav ul:nth-of-type(2) li:first-of-type button img {
+	margin-right: 1em;
+}
+
+header nav ul:nth-of-type(2) li:nth-of-type(2) button {
+	background-color: red;
+	color: white;
+	width: 330px;
+	height: 50px;
+	margin: 2%;
+	border-radius: 72px;
+}
+
+header nav ul:nth-of-type(2) li:last-of-type button {
+	background-color: rgb(21, 21, 29);
+	color: white;
+	width: 330px;
+	height: 50px;
+	margin: 2%;
+	border-radius: 72px;
+	border: solid 0.1px white;
+}
+
+header nav ul:nth-of-type(3) li {
+	display: flex;
+	justify-content: space-between;
+	margin: 1em 1.5em 1em 0.9em;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	translate: -100% -100%;
+}
+
+/* Footer */
+
+footer {
+	margin-left: 12%;
+	margin-right: 12%;
+	border-top: solid 0.1px white;
+}
+
+footer section img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+footer section:nth-of-type(2) {
+	padding-bottom: 6%;
+	border-bottom: solid 0.1px white;
+}
+
+footer section ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer section ul li {
+	margin: 1%;
+	margin-right: 1em;
+	flex-basis: 40%;
+}
+
+footer section p {
+	margin: 2em 0 3em 0;
+	font-size: 0.8em;
+}
+
+
 

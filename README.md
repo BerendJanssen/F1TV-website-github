@@ -55,9 +55,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
-  ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  ### Bevindingen eigen tests
+  - Optie voor grotere tekst is erg fijn voor mensen die slechtziend zijn, afhankelijk van hoe slechtziend iemand is zien zij toch wel echt heel weinig
+  - Wanneer ik een speciefieke website op wil zoeken, en die vervolgens goed wil navigeren, terwijl ik een ballon probeer hoog te houden blijkt dit best lastig. 
+  - Met vingers aan elkaar gebonden merkte ik weinig problemen vergeleken met normaal. Ik zou ook niet weten hoe je dit soort gebruikers kunt helpen vanuit je website.
+  - Voor mensen met parkinsons of spasme kan ik begrijpen dat het gebruiken van een toetsenbord erg hinderlijk kan zijn. Voor hun is het erg handig als zij websites kunnen navigeren met maar een knop.
 
+  ### Bevindingen F1TV Website met narrator
+  HOMEPAGINA
+  - Wanneer je op de landingspagina aankomt is het eerste wat voorgelezen wordt de naam van je account. Deze staat rechtsboven. Dit vind ik een beetje verwarrend, zelf zou ik gewoon linksboven beginnen denk ik.
+  - Vervolgens kan je makkelijk door het primaire menu tabben, wel weer van recht naar links ipv links naar rechts.
+  - Na het primaire menu kom je in het secundaire menu. Hier tab je wel doorheen van links naar rechts. 
+  - Door de content heen tabben werkt allemaal best goed. Het enige wat ik opmerkelijk vond is dat de knoppen waarmee je door een slideshow scrollt allemaal 'button' heetten en niet bijvoorbeeld 'button slide naar links' of   
+    'button slide naar rechts'
+  - Bij de carrousellen van de 'Laatste race', 'verder kijken' en 'Populaire races uit het archief' moet je door alle opties heen tabben voordat je naar de volgende rij op de homepagina kan. Bij alle andere carousellen is dit 
+    niet het geval.
+  - De knoppen om naar de app of play store te gaan worden gewoon voorgelezen als 'i-m-g'.
+
+  DETAILPAGINA
+  - 
 </details>
 
 
@@ -67,15 +83,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  ### Homepagina: 
+  <img src="readme-images/Pagina-1-Analyse.png" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### Detailpagina: 
+  <img src="readme-images/Pagina-2-Analyse.png" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
+  ### Hamburger-menu: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
 </details>
 
 
