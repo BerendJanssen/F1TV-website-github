@@ -8,8 +8,6 @@
 }
 
 
-
-
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -19,116 +17,394 @@
 body {
 	background-color: rgb(21, 21, 29);
 	color: white;
-}
-
-/* Header */
-
-header {
-	
-	top: 0;
-	background-color: rgb(21, 21, 29);
+	font-family: "Open Sans", sans-serif;
 }
 
 li {
 	list-style-type: none;
 }
 
-header ul:first-of-type li:nth-of-type(2) img {
-	width: 155px;
+img {
+	max-width: 100%;
 }
+/*--------*/
+/* Header */
+/*--------*/
 
-header ul:nth-of-type(1) {
+/* Eerste ul, sticky navbar */
+header nav ul:nth-of-type(1) {
+	position: fixed;
+	top: 0em;
+	z-index: 2;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	margin: 1% 2% 0 2%;
-	padding: 1em 1em 0.6em 1em;
-	border-bottom: solid 0.1px white;
+	padding: 1em 1em 0.8em 1.5em;
+	background-color: rgb(21, 21, 29);
+	border-bottom: solid 0.01px rgb(150, 150, 150);
 }
 
-header nav ul:first-of-type {
-	border-bottom: none;
-	display: flex;
-	flex-direction: column;
+/* navbar iconen */
+header nav ul:nth-of-type(1) button {
+	background: none;
+	border: none;
+	padding: 0.2em 0 0 0;
 }
 
-header nav ul:first-of-type li {
-	margin: 2%;
-}
-
-header nav ul:nth-of-type(2) {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 2em 0 2em 0;
-}
-
-header nav ul:nth-of-type(2) li {
-	margin: 2%;
-}
-
-header nav ul:nth-of-type(2) li button {
-	width: 100%;
-}
-
-header nav ul:nth-of-type(2) li:first-of-type button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: white;
-	color: rgb(21, 21, 29);
-	width: 330px;
-	height: 50px;
-	margin: 2%;
-	border-radius: 72px;
-}
-
-header nav ul:nth-of-type(2) li:first-of-type button img {
+/* F1TV logo navbar */
+header nav ul:nth-of-type(1) li:nth-of-type(2) {
+	width: 9.9em;
 	margin-right: 1em;
 }
 
-header nav ul:nth-of-type(2) li:nth-of-type(2) button {
-	background-color: red;
-	color: white;
-	width: 330px;
-	height: 50px;
-	margin: 2%;
-	border-radius: 72px;
+/* zoek icon omlaag */
+header nav ul:nth-of-type(1) li:nth-of-type(3) {
+	padding: 0.3em 0 0 0;
 }
 
-header nav ul:nth-of-type(2) li:last-of-type button {
+/* Hamburger menu div */
+header nav div {
 	background-color: rgb(21, 21, 29);
-	color: white;
-	width: 330px;
-	height: 50px;
-	margin: 2%;
-	border-radius: 72px;
-	border: solid 0.1px white;
-}
-
-header nav ul:nth-of-type(3) li {
-	display: flex;
-	justify-content: space-between;
-	margin: 1em 1.5em 1em 0.9em;
-}
-
-nav {
 	position: fixed;
 	top: 0;
-	right: 0;
-	bottom: 0;
 	left: 0;
-	translate: -100% -100%;
+	translate: -100% 0;
+	margin: 3.7em 0 0 0;
+} 
+
+header nav div.openMenu {
+	position: sticky;
+	translate: 0 0;
+	transition: 0.5ms;
 }
 
+body.nietScrollen {
+	overflow: hidden;
+}
+
+/* Eerste ul hamburger menu */
+header nav div ul:nth-of-type(1) {
+	position: relative;
+	margin: 0;
+	padding: 1.5em 0.6em 0.8em 1.1em;
+	display: flex;
+	flex-direction: column;
+	border: none;
+}
+
+header nav div ul:nth-of-type(1) li {
+	padding: 0.8em 0 0.8em 0;
+}
+
+/* Tweede ul hamburger menu */
+header nav div ul:nth-of-type(2) {
+	padding: 0.5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Tweede ul buttons */
+header nav div ul:nth-of-type(2) li button {
+	margin: 0.5em;
+	padding: 0.8em;
+	width: 25em;
+	border-radius: 72px;
+	border: none;
+}
+
+header nav div ul:nth-of-type(2) li:nth-of-type(2) button {
+	background-color: red;
+	color: white;
+}
+
+header nav div ul:nth-of-type(2) li:nth-of-type(3) button {
+	background-color: rgb(21, 21, 29);
+	color: white;
+	border: solid 0.01px rgb(150, 150, 150);
+}
+
+/* Derde ul hamburger menu */
+header nav div ul:nth-of-type(3) {
+	padding: 0.5em;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1em 1.3em 1em 0.8em;
+}
+
+/* Derde ul list items */
+header nav div ul:nth-of-type(3) li {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-basis: 100%;
+	margin: 1em 0 0 0;
+	font-size: 0.8em;
+}
+
+/* Vierde ul hamburger menu */
+header nav div ul:nth-of-type(4) {
+	display: flex;
+	margin: 1em 0 1em 1.3em;
+}
+
+/* Vierde ul list items */
+header nav div ul:nth-of-type(4) li {
+	margin: 0 1.3em 0 0;
+	color: rgb(150, 150, 150);
+	display: flex;
+}
+
+header section {
+	margin: 4em 0.8em 0 0.7em;
+}
+
+header section article div {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) -10%, #15151D 15%);
+	translate: 0em -1.8em;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Tekst in afbeelding */
+header section article div p:nth-of-type(1) {
+	display: flex;
+	justify-content: center;
+	margin: 0 0 1em 0;
+	font-size: 0.82em;
+	font-weight: 650;
+}
+
+header section article div p:nth-of-type(2){
+	display: flex;
+	justify-content: center;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+
+header section article div p:nth-of-type(3) {
+	margin: 1em 2em 0 2em;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+
+/* Bekijk nu */
+
+header section article div a {
+	background-color: red;
+	padding: 0 0.4em 0 0.4em;
+	margin: 1em 7em 1em 7em;
+	border-radius: 100px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header section article div a:link {
+	text-decoration: none;
+	color: white;
+}
+
+header section article div a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+header section article div a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+header section article div a:active {
+	text-decoration: none;
+	color: rgb(255, 155, 155);
+}
+
+header section article div a p:nth-of-type(1) {
+	margin-top: 1em;
+	font-size: 0.8em;
+	font-weight: 700;
+}
+
+/* Carousel 1 buttons */
+header section ul {
+	display: flex;
+	justify-content: center;
+	margin: 1em 0 3em 0;
+}
+
+header section ul li button {
+	background: rgb(150, 150, 150);
+	border: solid 3px rgb(161, 159, 161);
+	border-radius: 100%;
+	margin: 0.3em;
+}
+
+header section ul li:nth-of-type(1) button {
+	background: rgb(39, 39, 48);
+	padding: 0.4em 0.4em 0.2em 0.4em;
+	margin: 0 1em 1em 0;
+	border: none;
+}
+
+header section ul li:nth-of-type(6) button {
+	background: rgb(39, 39, 48);
+	padding: 0.4em 0.4em 0.2em 0.4em;
+	margin: 0 0 1em 1em;
+	border: none;
+}
+
+
+
+/*------*/
+/* Main */
+/*------*/
+
+/* H1 */
+main section:nth-of-type(1) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 1.3em;
+	font-weight: 550;
+	margin-bottom: 0.7em;
+}
+
+main section:nth-of-type(1) button {
+	padding: 0.8em 2.5em 0.8em 2.5em;
+	border: none;
+	border-radius: 5px;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: white;
+	background-color: red;
+}
+
+/* Carousel 2 */
+main section:nth-of-type(2) article:nth-of-type(1) {
+	display: grid;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) p:nth-of-type(1) {
+	display: flex;
+	justify-content: center;
+	font-weight: 500;
+	margin: 0.6em 0 2em 0;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) img {
+	width: 87%;
+	justify-self: center;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) p:nth-of-type(2) {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: 600;
+	margin-top: 0.6em;
+}	
+
+/* Carousel 2 buttons */
+main section:nth-of-type(2) ul {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin-top: 2em;
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(1) button {
+	position: absolute;
+	top: -16em;
+	left: 0.5em;
+
+	background: none;
+	border: none;
+	size: 300%;
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(7) button {
+	position: absolute;
+	top: -16em;
+	right: 0.5em;
+
+	background: none;
+	border: none;
+}
+
+main section:nth-of-type(2) button {
+	display: flex;
+	justify-self: center;
+	margin-top: 2em;
+	padding: 0.8em 2.5em 0.8em 2.5em;
+	border: none;
+	border-radius: 5px;
+	font-size: 0.8em;
+	font-weight: 600;
+	color: white;
+	background-color: red;
+}
+
+main section:nth-of-type(2) ul li button {
+	border: solid 6px rgb(39, 39, 48);
+	border-radius: 100%;
+	background: none;
+	margin: 0 0.7em 0 0.7em;
+	padding: 0;
+}
+
+/* Carousel 3 */
+main section:nth-of-type(3) {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	margin: 4em 3em 0 3em;
+}
+
+main section:nth-of-type(3) h2 {
+	flex-basis: 60%;
+	font-size: 1.1em;
+	font-weight: 800;
+}
+
+main section:nth-of-type(3) button {
+	flex-basis: 40%;
+	color: white;
+	background: none;
+	border: none;
+}
+
+main section:nth-of-type(3) ul {
+	display: flex;
+}
+
+main section:nth-of-type(3) ul li {
+	flex-basis: 50%;
+}
+
+
+/*--------*/
 /* Footer */
+/*--------*/
 
 footer {
-	margin-left: 12%;
-	margin-right: 12%;
+	margin-left: 3.2em;
+	margin-right: 3.2em;
 	border-top: solid 0.1px white;
 }
 
-footer section img {
+footer div:nth-of-type(1) img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -136,25 +412,38 @@ footer section img {
 	margin-bottom: 1em;
 }
 
-footer section:nth-of-type(2) {
-	padding-bottom: 6%;
+footer div:nth-of-type(2) {
+	padding-bottom: 1.6em;
 	border-bottom: solid 0.1px white;
 }
 
-footer section ul {
+footer div:nth-of-type(2) p {
+	margin: 0;
+}
+
+footer div ul {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-footer section ul li {
-	margin: 1%;
-	margin-right: 1em;
-	flex-basis: 40%;
+footer div:nth-of-type(2) ul li {
+	flex-wrap: wrap;
+	margin: 0.3em 1em 0 0;
 }
 
-footer section p {
-	margin: 2em 0 3em 0;
-	font-size: 0.8em;
+footer div:nth-of-type(2) ul li img {
+	margin-top: 0.5em;
+}	
+
+footer div ul li {
+	flex-basis: 38%;
+}
+
+footer div p {
+	margin: 2em 0 4em 0;
+	font-size: 0.7em;
+	font-weight: 400;
+	line-height: 2em;
 }
 
 

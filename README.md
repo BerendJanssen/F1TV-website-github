@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rood
 
   #### Je focus:
-  Focus plane (responsive ook proberen)
+  Responsive (Focus plane als genoeg tijd)
  
 </details>
 
@@ -40,11 +40,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/F1TV-Pagina-1.jpeg" width="375px" alt="Homepagina van de F1TV website">
+  <img src="readme-images/F1-TV-Hoofdpagina.png" width="375px" alt="Homepagina van de F1TV website">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/F1TV-Pagina-2.jpeg" width="375px" alt="Seizoensoverzicht actuele seizoen">
+  <img src="readme-images/F1-TV-2024-Grand-Prix-van-São-Paulo.png" width="375px" alt="Detailpagina Race Sao Paulo">
+
+  #### Screenshot(s) van het hamburgermenu (small screen):
+  hier de naam van de pagina  
+  <img src="readme-images/F1-TV-2024-Hamburger-Menu.png" width="375px" alt="Hamburgermenu">
  
 </details>
 
@@ -90,7 +94,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/Pagina-2-Analyse.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### Hamburger-menu: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/Hamburgermenu-Analyse.png" width="375px" alt="breakdown van nog een dynamisch deel">
 </details>
 
 
