@@ -109,24 +109,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  HTML bestandje opbouwen ging makkelijk, hier en daaralleen niet de beste tags gekozen. Had in eerste instantie wat problemen met het goed sticky krijgen van de header maar dat duurde niet al te lang.
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | nvt            | nvt                | nvt          | nvt              |
+  |                |                    |              |                  |
   | ...            | ...                | ...          | ...              |
+  
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - F!TV website veranderd afhankelijk voor van of er een race-weekend aan de gang is
+  - Buttons linken naar punt in dezelfde pagina, A's (anchors) naar andere pagina's
+  - Sections & articles moeten een H element bevatten, anders div
+  - Kleine 'F1 logo tags' kunnen gedaan worden met border-left
+  - Hele eerste carousel in header
+  - H1 is abonneren op F1TV
 
 </details>
 
@@ -141,6 +146,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+  - Hamburgermenu gelukt, alleen niet goed sticky
+  - Lastig om te weten in wat voor situaties flexbox of grid handiger is
+  - Wat zijn precies de regeltjes rondom classes en id's
 
 
   ### Agenda voor meeting
