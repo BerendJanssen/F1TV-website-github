@@ -150,6 +150,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Hamburgermenu gelukt, alleen niet goed sticky
   - Lastig om te weten in wat voor situaties flexbox of grid handiger is
   - Wat zijn precies de regeltjes rondom classes en id's
+  - Dingen wel in hamburger op ene pagina maar niet op andere
+  - Beste manier om een carousel te maken
 
 
   ### Agenda voor meeting
@@ -157,18 +159,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Hamburgermenu  | nvt                | nvt          | nvt              |
+  | Classes & id's |                    |              |                  |
+  | Carousellen    |                    |              |                  |
   | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Open Sans proberen zonder link in html
+  - Lokale font doen via CSS
+  - Voor carousellen, articles met id uitwisselen via anchors met hrefjes
+  - Zorgen dat iedere section en article een H heeft
+  - Hamburgermenu div position fixen, juiste hoogte geven en dan overflow: scroll
 
 </details>
 
@@ -197,6 +201,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+  - svg's voor standaard modus stylen in html, of ook in css?
+  - Animatie hamburger manu sluiten
 
 
   ### Agenda voor meeting

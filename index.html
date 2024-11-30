@@ -3,34 +3,45 @@
 	
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="Berend Jnassen">
+	<meta name="author" content="Berend Janssen">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<title>F1TV</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-	<style>
-		@font-face {
-			font-family: F1TV;
-			src:local("C:\Windows\Fonts\Formula1 Display");
-		}
-	</style>
+
 </head>
 
 <body>
 	<header>
 		<nav>
 			<ul>
-				<li><button><img src="images/menu-icon.svg" alt="Open menu"></button></li>
+				<li><button>
+					<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+						<path d="M4.66675 21H23.3334L22.1667 18.6667H4.66675V21Z" fill="white"/>
+						<path d="M4.66675 15.1667H20.4167L19.2501 12.8333H4.66675V15.1667Z" fill="white"/>
+						<path d="M4.66675 9.33333H18.6667L17.5001 7H4.66675V9.33333Z" fill="white"/>
+					</svg>
+				</button></li>
 				<li><img src="images/f1-tv-logo.webp" alt="F1TV logo"></li>
-				<li><button><img src="images/search-icon.svg" alt="Zoek"></button></li>
+				<li><button>
+					<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+						<path d="M17.9667 19.25L12.1917 13.475C11.7333 13.8417 11.2063 14.1319 10.6104 14.3458C10.0146 14.5597 9.38056 14.6667 8.70833 14.6667C7.04306 14.6667 5.63383 14.0898 4.48067 12.936C3.3275 11.7822 2.75061 10.373 2.75 8.70833C2.74939 7.04367 3.32628 5.63444 4.48067 4.48067C5.63506 3.32689 7.04428 2.75 8.70833 2.75C10.3724 2.75 11.7819 3.32689 12.9369 4.48067C14.0919 5.63444 14.6685 7.04367 14.6667 8.70833C14.6667 9.38056 14.5597 10.0146 14.3458 10.6104C14.1319 11.2063 13.8417 11.7333 13.475 12.1917L19.25 17.9667L17.9667 19.25ZM8.70833 12.8333C9.85417 12.8333 10.8283 12.4324 11.6307 11.6307C12.4331 10.8289 12.8339 9.85478 12.8333 8.70833C12.8327 7.56189 12.4318 6.58808 11.6307 5.78692C10.8295 4.98575 9.85539 4.58456 8.70833 4.58333C7.56128 4.58211 6.58747 4.98331 5.78692 5.78692C4.98636 6.59053 4.58517 7.56433 4.58333 8.70833C4.5815 9.85233 4.9827 10.8264 5.78692 11.6307C6.59114 12.4349 7.56495 12.8358 8.70833 12.8333Z" fill="white"/>
+					</svg>
+				</button></li>
 			</ul>
 
 			<div>
+				<ul>
+					<li><button>
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+							<path d="M19.75 3.67844L17.0716 1L10.375 7.69656L3.67844 1L1 3.67844L7.69656 10.375L1 17.0716L3.67844 19.75L10.375 13.0534L17.0716 19.75L19.75 17.0716L13.0534 10.375L19.75 3.67844Z" fill="white"/>
+						</svg>
+					</button></li>
+					<li><img src="images/f1-tv-logo.webp" alt=""></li>
+				</ul>
 				<ul>
 					<li><p>Hoofdpagina</p></li>
 					<li><p>2024 seizoen</p></li>
@@ -40,9 +51,20 @@
 					<li><p>Mijn lijst</p></li>
 				</ul>
 				<ul>
-					<li><button><img src="images/account-icon.svg" alt="Persoon icon">Inloggen</button></li>
+					<li><button>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+							<path d="M8.00005 1.59998C7.15136 1.59998 6.33742 1.93712 5.73731 2.53723C5.13719 3.13735 4.80005 3.95128 4.80005 4.79998C4.80005 5.64867 5.13719 6.4626 5.73731 7.06272C6.33742 7.66283 7.15136 7.99998 8.00005 7.99998C8.84874 7.99998 9.66267 7.66283 10.2628 7.06272C10.8629 6.4626 11.2 5.64867 11.2 4.79998C11.2 3.95128 10.8629 3.13735 10.2628 2.53723C9.66267 1.93712 8.84874 1.59998 8.00005 1.59998ZM5.60005 4.79998C5.60005 4.16346 5.85291 3.55301 6.30299 3.10292C6.75308 2.65283 7.36353 2.39998 8.00005 2.39998C8.63657 2.39998 9.24702 2.65283 9.69711 3.10292C10.1472 3.55301 10.4 4.16346 10.4 4.79998C10.4 5.4365 10.1472 6.04694 9.69711 6.49703C9.24702 6.94712 8.63657 7.19998 8.00005 7.19998C7.36353 7.19998 6.75308 6.94712 6.30299 6.49703C5.85291 6.04694 5.60005 5.4365 5.60005 4.79998Z" fill="#15151D"/>
+							<path d="M12.5 8.49988L14.5 13.4999H13.5L12 9.49988H4L2.5 13.4999H1.5L3.5 8.49988H12.5Z" fill="#15151D"/>
+						</svg>
+						Inloggen
+					</button></li>
 					<li><button>Abonneren</button></li>
-					<li><button><img src="images/gear-icon.svg" alt="Tandwiel icon">Instellingen</button></li>
+					<li><button>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+							<path d="M7.99989 10.3334C7.38105 10.3334 6.78756 10.0875 6.34998 9.64996C5.91239 9.21237 5.66656 8.61888 5.66656 8.00004C5.66656 7.3812 5.91239 6.78771 6.34998 6.35013C6.78756 5.91254 7.38105 5.66671 7.99989 5.66671C8.61873 5.66671 9.21222 5.91254 9.64981 6.35013C10.0874 6.78771 10.3332 7.3812 10.3332 8.00004C10.3332 8.61888 10.0874 9.21237 9.64981 9.64996C9.21222 10.0875 8.61873 10.3334 7.99989 10.3334ZM12.9532 8.64671C12.9799 8.43338 12.9999 8.22004 12.9999 8.00004C12.9999 7.78004 12.9799 7.56004 12.9532 7.33338L14.3599 6.24671C14.4866 6.14671 14.5199 5.96671 14.4399 5.82004L13.1066 3.51338C13.0266 3.36671 12.8466 3.30671 12.6999 3.36671L11.0399 4.03338C10.6932 3.77338 10.3332 3.54671 9.91323 3.38004L9.66656 1.61338C9.65302 1.53485 9.61212 1.46366 9.5511 1.41241C9.49009 1.36116 9.41291 1.33316 9.33323 1.33338H6.66656C6.49989 1.33338 6.35989 1.45338 6.33323 1.61338L6.08656 3.38004C5.66656 3.54671 5.30656 3.77338 4.95989 4.03338L3.29989 3.36671C3.15323 3.30671 2.97323 3.36671 2.89323 3.51338L1.55989 5.82004C1.47323 5.96671 1.51323 6.14671 1.63989 6.24671L3.04656 7.33338C3.01989 7.56004 2.99989 7.78004 2.99989 8.00004C2.99989 8.22004 3.01989 8.43338 3.04656 8.64671L1.63989 9.75338C1.51323 9.85338 1.47323 10.0334 1.55989 10.18L2.89323 12.4867C2.97323 12.6334 3.15323 12.6867 3.29989 12.6334L4.95989 11.96C5.30656 12.2267 5.66656 12.4534 6.08656 12.62L6.33323 14.3867C6.35989 14.5467 6.49989 14.6667 6.66656 14.6667H9.33323C9.49989 14.6667 9.63989 14.5467 9.66656 14.3867L9.91323 12.62C10.3332 12.4467 10.6932 12.2267 11.0399 11.96L12.6999 12.6334C12.8466 12.6867 13.0266 12.6334 13.1066 12.4867L14.4399 10.18C14.5199 10.0334 14.4866 9.85338 14.3599 9.75338L12.9532 8.64671Z" fill="white"/>
+						</svg>
+						Instellingen
+					</button></li>
 				</ul>
 				<ul>
 					<li><p>AUTHENTICS</p><img src="images/link-icon.svg" alt="Link out icon"></li>
@@ -60,7 +82,7 @@
 			</div>
 		</nav>
 
-		<section>
+		<section class="headerCarouselHome">
 			<article>
 				<img src="images/Race_in_30_minuten.jpeg" alt="Thumbnail">
 				<div>
@@ -85,12 +107,12 @@
 
 
 	<main>
-		<section>
+		<section class="abonneren">
 			<h1>Abonneren op F1 TV</h1>
 			<button>ABONNEREN</button>
 		</section>
 
-		<section>
+		<section class="abonneerCarousel">
 			<article>
 				<p>ALLE F1 LIVE</p>
 				<img src="images/all-f1-live-v2.png" alt="Thumbnail">
@@ -108,101 +130,194 @@
 			<button>ABONNEREN</button>
 		</section>
 
-		<section>
-			<h2>2024 Grand Prix Van Sao Paulo</h2>
-			<button>Bekijk alles</button>
+		<section class="schema">
 			<ul>
-				<li>
-					<img src="" alt="Thumbnail">
-					<h3>De race in 30 Minuten</h3>
-					<p>00:30:03 ¦ Uitgebreide hoogtepunten</p>
-					<img src="" alt="F1 tag?">
-				</li>
-				<li>
-					<img src="" alt="Thumbnail">
-					<h3>Race</h3>
-					<p>02:54:37 ¦ Herhaling</p>
-					<img src="" alt="F1 tag?">
-				</li>
+				<li><img src="images/F1-Qatar/149.png" alt="Vlag van Qatar"></li>
+				<li><h2>Qatar</h2></li>
+				<li><p>29 NOV - 1 DEC | R23</p></li>
 			</ul>
+			<button>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<g clip-path="url(#clip0_72_83)">
+					  <path d="M19 5H3L3 7V22H5H19C20.1046 22 21 21.1046 21 20V7C21 5.89543 20.1046 5 19 5Z" stroke="black" stroke-width="2" stroke-linecap="round"/>
+					  <path d="M8 2V1H6V2H8ZM6 8V9H8V8H6ZM18 2C18 1.44772 17.5523 1 17 1C16.4477 1 16 1.44772 16 2H18ZM16 5C16 5.55228 16.4477 6 17 6C17.5523 6 18 5.55228 18 5H16ZM6 2V8H8V2H6ZM16 2V5H18V2H16Z" fill="black"/>
+					  <circle cx="18" cy="6" r="7" fill="white"/>
+					  <circle cx="18" cy="6" r="6" fill="#2398D2"/>
+					</g>
+					<defs>
+					  <clipPath id="clip0_72_83">
+						<rect width="24" height="24" fill="white"/>
+					  </clipPath>
+					</defs>
+				  </svg>
+				  <p>Schema</p>
+				  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path d="M2.4541 13.9395L4 15.4999L12 7.49988L20 15.4999L21.5461 13.9395L13.0606 5.45395C12.7793 5.17274 12.3978 5.01477 12.0001 5.01477C11.6024 5.01477 11.2209 5.17274 10.9396 5.45395L2.4541 13.9395Z" fill="white"/>
+				  </svg>
+			</button>
+			<div class="schemaCarousel">
+				<ul>
+					<li><button>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path d="M13.9396 21.546L15.5 20.0001L7.5 12.0001L15.5 4.00012L13.9396 2.45402L5.45407 10.9395C5.17287 11.2208 5.01489 11.6023 5.01489 12C5.01489 12.3978 5.17287 12.7792 5.45407 13.0605L13.9396 21.546Z" fill="white"/>
+						</svg>
+					</button></li>
+					<li><button>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path d="M10.0604 2.45398L8.5 3.99988L16.5 11.9999L8.5 19.9999L10.0604 21.546L18.5459 13.0605C18.8271 12.7792 18.9851 12.3977 18.9851 12C18.9851 11.6022 18.8271 11.2208 18.5459 10.9395L10.0604 2.45398Z" fill="white"/>
+						</svg>
+					</button></li>
+				</ul>
+				<ul>
+					<button>ALLE</button>
+					<button>F1</button>
+					<button>F2</button>
+					<button>F1A</button>
+				</ul>
+			</div>
 		</section>
 
-		<section>
-			<h2>Nieuwe afleveringen</h2>
-			<button>Bekijk alles</button>
-			<ul>
-				<li>
-					<img src="" alt="Thumbnail">
-					<p>Niki Lauda</p>
-					<p>00:28:56 ¦ Documentaire</p>
-					<img src="" alt="F1 tag?">
-				</li>
-				<li>
-					<img src="" alt="Thumbnail">
-					<p>Nigel Mansell</p>
-					<p>00:32:27 ¦ Documentaire</p>
-					<img src="" alt="F1 tag?">
-				</li>
-			</ul>
+		<section class="kaartjeWeekend">
+			<h2>Formule 2</h2>
+			<a href="#">Bekijk alles!</a>
+			<article>
+				<img src="images/F1-Qatar/landscape_hero_web (3).jpg" alt="">
+				<h3>Training</h3>
+				<p>Training</p>
+				<p>00:52:59 | Herhaling</p>
+				<p>F2</p>
+			</article>
 		</section>
 
-		<section>
+		<section class="carouselVerticaal">
+			<h2>F1 Academy</h2>
+			<a href="#">Bekijk alles!</a>
+			<article>
+				<img src="images/F1-Qatar/landscape_web (1).jpg" alt="">
+				<h3>Training 1</h3>
+				<p>00:45:59 | Herhaling</p>
+				<p>F1A</p>
+			</article>
+			<article>
+				<img src="images/F1-Qatar/Training2.jpg" alt="">
+				<h3>Training 2</h3>
+				<p>F1A</p>
+			</article>
+		</section>
+
+		<section class="carouselVerticaal">
+			<h2>Shows en analyse</h2>
+			<a href="#">Bekijk alles!</a>
+			<article>
+				<img src="images/F1-Qatar/landscape_web (2).jpg" alt="">
+				<h3>Weekend Warm-Up</h3>
+				<p>00:34:04 | Herhaling</p>
+				<p>F1</p>
+			</article>
+			<article>
+				<img src="images/F1-Qatar/landscape_web (3).jpg" alt="">
+				<h3>De wondere wereld van F1-bedrading</h3>
+				<p>00:14:09 | Analyse</p>
+				<p>F1</p>
+			</article>
+		</section>
+
+		<section class="carouselVerticaal">
+			<h2>Persconferenties</h2>
+			<a href="#">Bekijk alles!</a>
+			<article>
+				<img src="images/F1-Qatar/landscape_web (4).jpg" alt="">
+				<h3>FIA Persconferentie Coureurs, groep 1</h3>
+				<p>00:17:59 | Herhaling</p>
+				<p>F1</p>
+			</article>
+			<article>
+				<img src="images/F1-Qatar/landscape_web (5).jpg" alt="">
+				<h3>FIA Persconferentie Coureurs, groep 2</h3>
+				<p>00:17:48 | Herhaling</p>
+				<p>F1</p>
+			</article>
+		</section>
+
+		<a href="#">Meer</a>
+
+		<section class="carouselHorizontaal">
 			<h2>Programma's</h2>
-			<button>Bekijk alles</button>
+			<a href="#">Bekijk alles</a>
 			<ul>
 				<li>
-					<img src="" alt="Thumbnail">
+					<img src="images/F1-Qatar/portrait_web.jpg" alt="The cooldown room thumbnail">
 				</li>
 				<li>
-					<img src="" alt="Thumbnail">
+					<img src="images/F1-Qatar/portrait_web (1).jpg" alt="Jolyon Palmer's analysis thumbnail">
 				</li>
 			</ul>
+			<button>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path d="M10.0604 2.45398L8.5 3.99988L16.5 11.9999L8.5 19.9999L10.0604 21.546L18.5459 13.0605C18.8271 12.7792 18.9851 12.3977 18.9851 12C18.9851 11.6022 18.8271 11.2208 18.5459 10.9395L10.0604 2.45398Z" fill="white"/>
+				</svg>
+			</button>
 		</section>	
 
-		<section>
+		<section class="carouselHorizontaal">
 			<h2>Documentaires</h2>
 			<button>Bekijk alles</button>
 			<ul>
 				<li>
-					<img src="" alt="Thumbnail">
+					<img src="images/F1-Qatar/portrait_web (7).jpg" alt="Chasing the dream thumbnail">
 				</li>
 				<li>
-					<img src="" alt="Thumbnail">
+					<img src="images/F1-Qatar/portrait_web (8).jpg" alt="F1's greatest comebacks thumbnail">
 				</li>
 			</ul>
+			<button>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path d="M10.0604 2.45398L8.5 3.99988L16.5 11.9999L8.5 19.9999L10.0604 21.546L18.5459 13.0605C18.8271 12.7792 18.9851 12.3977 18.9851 12C18.9851 11.6022 18.8271 11.2208 18.5459 10.9395L10.0604 2.45398Z" fill="white"/>
+				</svg>
+			</button>
 		</section>	
 
-		<section>
-			<h2>Inside story</h2>
-			<button>Bekijk alles</button>
-			<section>
-				<img src="" alt="Thumbnail">
-				<h3></h3>
-				<p></p>
-				<p></p>
-				<img src="" alt="F1 tag?">
-			</section>
+		<section class="kaartje">
+			<h2>Inside Story</h2>
+			<a href="#">Bekijk alles</a>
+			<article>
+				<img src="images/F1-Qatar/landscape_web (6).jpg" alt="Alpine ride the storm in Sao Paulo thumbnail">
+				<h3>INSIDE STORY: Alpine rijdt de storm in Sao Paulo</h3>
+				<p>Het verhaal van hoe Alpine de concurrentie te slim af was tijdens een stortvloed op Interlagos.</p>
+				<p>00:17:47 | Documentaire</p>
+				<p>F1</p>
+			</article>
 		</section>
 
-		<section>
+		<section class="carouselHorizontaalKlein">
 			<h2>Populaire races uit het archief</h2>
-			<button>Bekijk alles</button>
+			<a href="#">Bekijk alles</a>
 			<ul>
 				<li>
-					<img src="" alt="Thumbnail">
+					<img src="images/F1-Qatar/landscape_web (7).jpg" alt="2023 Grand Prix van Las Vegas thumbnail">
 				</li>
 				<li>
-					<img src="" alt="Thumbnail">
+					<img src="images/F1-Qatar/landscape_web (8).jpg" alt="2021 Grand Prix van Abu Dhabi thumbnail">
 				</li>
 			</ul>
+			<button>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path d="M10.0604 2.45398L8.5 3.99988L16.5 11.9999L8.5 19.9999L10.0604 21.546L18.5459 13.0605C18.8271 12.7792 18.9851 12.3977 18.9851 12C18.9851 11.6022 18.8271 11.2208 18.5459 10.9395L10.0604 2.45398Z" fill="white"/>
+				</svg>
+			</button>
 			<ul>
 				<li>
-					<img src="" alt="Thumbnail">
+					<img src="images/F1-Qatar/landscape_web (18).jpg" alt="Formula 2 thumbnail">
 				</li>
 				<li>
-					<img src="" alt="Thumbnail">
+					<img src="images/F1-Qatar/landscape_web (19).jpg" alt="Formula 3 thumbnail">
 				</li>
 			</ul>
+			<button>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path d="M10.0604 2.45398L8.5 3.99988L16.5 11.9999L8.5 19.9999L10.0604 21.546L18.5459 13.0605C18.8271 12.7792 18.9851 12.3977 18.9851 12C18.9851 11.6022 18.8271 11.2208 18.5459 10.9395L10.0604 2.45398Z" fill="white"/>
+				</svg>
+			</button>
 		</section>	
 	</main>
 
@@ -210,16 +325,16 @@
 
 	<footer>
 		<div>
-			<img src="images/F1LogoMicroWhite.avif" alt="F1TV logo" width="155px">
+			<img src="images/F1LogoMicroWhite.avif" alt="F1TV logo">
 		</div>
 			
 		<div>
 			<p>Beschikbaar op:</p>
 			<ul>
-				<li><a href=""><img src="images/apple.png" alt=""></a></li>
-				<li><a href=""><img src="images/Googleplay.png" alt=""></a></li>
-				<li><a href=""><img src="images/amazon.png" alt=""></a></li>
-				<li><a href=""><img src="images/roku.png" alt=""></a></li>
+				<li><a href="https://apps.apple.com/us/app/f1-tv/id1315007279"><img src="images/apple.png" alt=""></a></li>
+				<li><a href="https://play.google.com/store/apps/details?id=com.formulaone.production&hl=en&gl=US&pli=1"><img src="images/Googleplay.png" alt=""></a></li>
+				<li><a href="https://www.amazon.co.uk/Formula-One-Digital-Media-Limited/dp/B077VPVD47"><img src="images/amazon.png" alt=""></a></li>
+				<li><a href="https://channelstore.roku.com/details/4af8eceac36ccd8b432a2d37712dde90/f1-tv"><img src="images/roku.png" alt=""></a></li>
 				<li><a href=""><img src="images/Chromecast.png" alt=""></a></li>	
 			</ul>
 		</div>
