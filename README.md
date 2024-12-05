@@ -204,6 +204,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   - svg's voor standaard modus stylen in html, of ook in css?
   - Animatie hamburger manu sluiten
+  - 
 
 
   ### Agenda voor meeting

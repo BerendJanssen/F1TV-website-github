@@ -17,19 +17,21 @@
 body {
 	background-color: rgb(21, 21, 29);
 	color: white;
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 li {
 	list-style-type: none;
 }
 
-img {
-	max-width: 100%;
-}
 /*--------*/
 /* Header */
 /*--------*/
+
+
+header img {
+	max-width: 100%;
+}
 
 /* Eerste ul, sticky navbar */
 header nav ul:nth-of-type(1) {
@@ -185,7 +187,9 @@ header nav div ul:nth-of-type(5) li {
 /* Header Carousel Homepagina */
 
 .headerCarouselHome {
-	margin: 4em 0.8em 0 0.7em;
+	margin: 4em 0 0 0;
+	border-left: solid 0.8em rgb(102, 3, 0);
+	border-right: solid 0.8em rgb(102, 3, 0);
 }
 
 .headerCarouselHome article div {
@@ -263,7 +267,8 @@ header nav div ul:nth-of-type(5) li {
 .headerCarouselHome ul {
 	display: flex;
 	justify-content: center;
-	margin: 1em 0 3em 0;
+	margin: 1em 0 0 0;
+	padding-bottom: 1em;
 }
 
 .headerCarouselHome ul li button {
@@ -293,12 +298,21 @@ header nav div ul:nth-of-type(5) li {
 /* Main */
 /*------*/
 
+
+
+/* WeekendExpansie */
+.weekendExpansie {
+	background: linear-gradient(180deg, #660300 3.53%, #2E0200 49.82%);
+}
+
 /* H1 */
 .abonneren {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+
+	padding-top: 3em;
 }
 
 h1 {
@@ -316,6 +330,8 @@ h1 {
 	color: white;
 	background-color: red;
 }
+
+
 
 /* Carousel 2 */
 .abonneerCarousel article:nth-of-type(1) {
@@ -342,6 +358,8 @@ h1 {
 	font-weight: 600;
 	margin-top: 0.6em;
 }	
+
+
 
 /* Carousel 2 buttons */
 .abonneerCarousel ul {
@@ -374,6 +392,7 @@ h1 {
 	display: flex;
 	justify-self: center;
 	margin-top: 2em;
+	margin-bottom: 3em;
 	padding: 0.8em 2.5em 0.8em 2.5em;
 	border: none;
 	border-radius: 5px;
@@ -391,10 +410,64 @@ h1 {
 	padding: 0;
 }
 
+
+
 /* Schema */
+.schema ul {
+	display: flex;
+	margin: 1em 0.5em 1em 0.5em;
+	padding-bottom: 1em;
+	border-bottom: solid 1px rgb(150, 150, 150);
+}
+
+.schema ul li:nth-of-type(1) img {
+	margin-top: 0.4em;
+	width: 2em;
+}
+
+.schema ul li:nth-of-type(2) h2 {
+	font-size: 1.4em;
+	margin-left: 0.5em;
+}
+
+.schema ul li:nth-of-type(3) {
+	margin-top: 0.7em;
+	margin-left: auto;
+	font-size: 0.8em;
+}
+
+.schema details summary {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	color: black;
+	padding: 0.6em;
+	border-radius: 72px;
+}
+
+.schema details > summary {
+	list-style: none;
+	display: flex;
+}
+
+.schema details summary p {
+	margin: 0.2em 0 0 0.5em;
+}
+
+.schema details summary svg:nth-of-type(2) {
+	margin: 0.3em 0 0 0.3em;
+}
+
+/* Uitklap gebeuren */
+.schema details div ul {
+	border: none;
+}
 
 
 /* SchemaCarousel */
+
+
 
 
 /* KaartjeWeekend */
@@ -402,17 +475,24 @@ h1 {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 3em;
+	justify-content: space-between;
+}
+
+.kaartjeWeekend img {
+	max-width: 100%;
 }
 
 /* KaartjeWeekend - Bekijk alles knop */
 .kaartjeWeekend a {
-	margin: 0.4em 0 0 4em;
+	margin: 0.4em 0 0 0;
 	text-decoration: none;
 }
 
 .kaartjeWeekend h2 {
 	margin-bottom: 0.5em;
 }
+
+
 
 /* KaartjeWeekend - kaartje */
 .kaartjeWeekend article {
@@ -434,10 +514,120 @@ h1 {
 	border-left: solid 3px lightskyblue;
 }
 
+
+
 /* CarouselVerticaal */
+.carouselVerticaal {
+	margin: 3em;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.carouselVerticaal h2 {
+	display: flex;
+	flex-basis: 65%;
+	font-size: 1em;
+}
+
+.carouselVerticaal a {
+	display: flex;
+	flex-basis: 35%;
+}
+
+.carouselVerticaal article {
+	display: grid;
+	gap: 0.5em;
+	grid-template-columns: auto auto auto auto auto auto auto;
+	grid-template-rows: auto auto auto;
+
+	margin: 1em 0 1em 0;
+	width: 100vw;
+}
+
+.carouselVerticaal article img {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 5;
+
+	width: 35vw;
+}
+
+.carouselVerticaal article h3 {
+	grid-column-start: 5;
+	grid-column-end: 8;
+	grid-row: 1;
+
+	font-size: 0.8em;
+}
+
+.carouselVerticaal article p:nth-of-type(1) {
+	grid-column-start: 5;
+	grid-column-end: 8;
+	grid-row: 2;
+
+	font-size: 0.6em;
+}
+
+.carouselVerticaal article p:nth-of-type(2) {
+	grid-column-start: 5;
+	grid-column-end: 8;
+	grid-row: 4;
+
+	font-size: 0.6em;
+}
+
 
 
 /* CarouselHorizontaal */
+.carouselHorizontaal {
+	position: relative;
+	margin: 3em;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.carouselHorizontaal h2 {
+	display: flex;
+	flex-basis: 65%;
+	font-size: 1em;
+	margin-bottom: 1em;
+}
+
+.carouselHorizontaal a {
+	display: flex;
+	flex-basis: 35%;
+	margin-bottom: 1em;
+}
+
+.carouselHorizontaal ul {
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	gap: 1em;
+}
+
+.carouselHorizontaal ul li {
+	flex: 0 0 auto;
+	scroll-snap-align: center;
+}
+
+.carouselHorizontaal button {
+	position: absolute;
+	top: 50%;
+	right: -8%;
+
+	border: none;
+	border-radius: 100%;
+	background-color: rgb(	39, 39,	48);
+	padding: 0.6em 0.7em 0.5em 0.7em;
+}
+
+
 
 /* Kaartje */
 .kaartje {
@@ -445,6 +635,8 @@ h1 {
 	flex-wrap: wrap;
 	margin: 3em;
 }
+
+
 
 /* Kaartje - Bekijk alles knop */
 .kaartje a {
@@ -455,6 +647,8 @@ h1 {
 .kaartje h2 {
 	margin-bottom: 0.5em;
 }
+
+
 
 /* Kaartje - kaartje */
 .kaartje article {
@@ -475,6 +669,7 @@ h1 {
 	padding: 0 0 0 0.5em;
 	border-left: solid 3px lightskyblue;
 }
+
 
 
 /* CarouselHorizontaalKlein */
@@ -522,6 +717,7 @@ footer div:nth-of-type(2) ul li {
 
 footer div:nth-of-type(2) ul li img {
 	margin-top: 0.5em;
+	width: 100%;
 }	
 
 footer div ul li {
