@@ -78,6 +78,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   DETAILPAGINA
   - 
+
+
+  ### WCAG Analyse 1
+  <img src="readme-images/WCAG-Analyse/WhatsApp Image 2024-12-06 at 12.12.25.jpeg" alt="WCAG analyse 1 pagina 1">
+  <img src="readme-images/WCAG-Analyse/WhatsApp Image 2024-12-06 at 12.12.26 (3).jpeg" alt="WCAG analyse 1 pagina 2">
+  <img src="readme-images/WCAG-Analyse/WhatsApp Image 2024-12-06 at 12.12.26 (2).jpeg" alt="WCAG analyse 1 pagina 3">
+  <img src="readme-images/WCAG-Analyse/WhatsApp Image 2024-12-06 at 12.12.26 (1).jpeg" alt="WCAG analyse 1 pagina 4">
+  <img src="readme-images/WCAG-Analyse/WhatsApp Image 2024-12-06 at 12.12.26.jpeg" alt="WCAG analyse 1 pagina 5">
+
 </details>
 
 
@@ -188,7 +197,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
-</details>
+ - Buttons hebben geen naam maar heten gewoon button
+ - Narrator zegt op gekke plekken dat hij niet verder kan tabben, bijvoorbeeld in het hamburgermenu gaat hij niet verder dan 'Authentics'
+ - Na het doorlopen van de algemene header gaat de narrator automatisch het hamburgermenu in ookal is deze niet geopend.
+ - Kleine 'buttons' om aan te geven in welk deel van het carousel je zit worden ook opgenoemd.
+ - Wanneer je enkel met tab door de pagina gaat slaat hij alle artikelen over en gaat hij alleen maar langs de buttons en links.
+ - Geen manier om door alle losse carousel items te klikken.
+ - Bijna overal mist alt tekst.
+
+
+
+  ### WCAG Analyse 2
+
+  <img src="readme-images/WCAG-Analyse/WhatsApp Image 2024-12-06 at 12.12.26 (4).jpeg" alt="WCAG analyse 2 pagina 1">
+  <img src="readme-images/WCAG-Analyse/WhatsApp Image 2024-12-06 at 12.12.26 (8).jpeg" alt="WCAG analyse 2 pagina 2">
+  <img src="readme-images/WCAG-Analyse/WhatsApp Image 2024-12-06 at 12.12.26 (7).jpeg" alt="WCAG analyse 2 pagina 3">
+  <img src="readme-images/WCAG-Analyse/WhatsApp Image 2024-12-06 at 12.12.26 (6).jpeg" alt="WCAG analyse 2 pagina 4">
+  <img src="readme-images/WCAG-Analyse/WhatsApp Image 2024-12-06 at 12.12.26 (5).jpeg" alt="WCAG analyse 2 pagina 5">
+
+ </details>
+
+ 
 
 
 
@@ -202,9 +231,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-  - svg's voor standaard modus stylen in html, of ook in css?
-  - Animatie hamburger manu sluiten
-  - 
+To Do:
+  - Svg's voor standaard modus stylen in css
+  - Roots aanmaken voor kleuren op pagina
+  - Animatie hamburger menu sluiten
+  - Carousellen
+  - Repsonsive maken
+  - Dark mode (has())
+  - Video & geluid embedden pagina 2?
+  - On hover en en click toevoegen buttons & links
+  - Zoekbalk waarin je kan typen
+  - Toetsenbord shortcuts
+  - Afbeeldingen vervangen voor hogere kwaliteit?
 
 
   ### Agenda voor meeting
@@ -212,8 +250,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Hoe responsive | nvt                | nvt          | nvt              |
+  | moet header?   |                    |              |                  |
+  |                |                    |              |                  |
+  | Animatie menu  |                    |              |                  |
+  | sluiten?       |                    |              |                  |
+  |                |                    |              |                  |
+  | Carousel twee  |                    |              |                  |
+  | list items     |                    |              |                  |
+  | tegelijk tonen?|                    |              |                  |
   | ...            | ...                | ...          | ...              |
 
 

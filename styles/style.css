@@ -673,8 +673,27 @@ h1 {
 
 
 /* CarouselHorizontaalKlein */
+.carouselHorizontaalKlein {
+	position: relative;
+	margin: 3em;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
 
+.carouselHorizontaalKlein h2 {
+	display: flex;
+	flex-basis: 65%;
+	font-size: 1em;
+	margin-bottom: 1em;
+}
 
+.carouselHorizontaalKlein a {
+	display: flex;
+	flex-basis: 35%;
+	margin-bottom: 1em;
+}
 
 
 /*--------*/
