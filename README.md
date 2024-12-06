@@ -233,16 +233,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 To Do:
   - Svg's voor standaard modus stylen in css
-  - Roots aanmaken voor kleuren op pagina
-  - Animatie hamburger menu sluiten
+  - Roots aanmaken voor kleuren op pagina           (check)
+  - Animatie hamburger menu sluiten                 (check)
+  - Hamburgermenu responsive tot bepaalde grootte   (check)
   - Carousellen
   - Repsonsive maken
-  - Dark mode (has())
-  - Video & geluid embedden pagina 2?
+  - Dark mode (has()) + toggle zou mooi zijn 
+  - Video & geluid embedden pagina 2?               (check)
   - On hover en en click toevoegen buttons & links
   - Zoekbalk waarin je kan typen
   - Toetsenbord shortcuts
   - Afbeeldingen vervangen voor hogere kwaliteit?
+  - Logo klikbaar maken voor naar homepagina        (check)
 
 
   ### Agenda voor meeting
@@ -259,16 +261,18 @@ To Do:
   | Carousel twee  |                    |              |                  |
   | list items     |                    |              |                  |
   | tegelijk tonen?|                    |              |                  |
+  |                |                    |              |                  |
+  | Gekke borders  |                    |              |                  |
   | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Grid - autofit - min/max voor responsive grid
+  - Media query alleen om browser te overschrijven wanneer het niet naar wens verloopt
+  - Before of after met svg
+  - Teams kijken carousel
 
 </details>
 
