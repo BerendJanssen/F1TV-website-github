@@ -1,3 +1,7 @@
+
+/*---------*/
+/* Kleuren */
+/*---------*/
 :root {
 	--color-text: white;
 	--color-text-2: rgb(120, 116, 114);
@@ -12,9 +16,11 @@
 	--color-kaartje-2: #23232C;
 }
 
-/**************/
+
+
+/*------------*/
 /* CSS REMEDY */
-/**************/
+/*------------*/
 *, *::after, *::before {
   box-sizing:border-box;  
   margin: 0;
@@ -22,12 +28,10 @@
 }
 
 
-/****************/
-/* JOUW STYLING */
-/****************/
 
-/* jouw code */
-
+/*------------------*/
+/* ALGEMENE STYLING */
+/*------------------*/
 body {
 	background-color: var(--color-background);
 	color: var(--color-text);
@@ -38,8 +42,10 @@ li {
 	list-style-type: none;
 }
 
+
+
 /*--------*/
-/* Header */
+/* HEADER */
 /*--------*/
 header {
 	background-color: var(--color-background-3);
@@ -80,14 +86,17 @@ header nav ul:nth-of-type(1) li:nth-of-type(3) {
 	padding: 0.3em 0 0 0;
 }
 
-/* Dark mode toggle */
+
+
+/*--------*/
+/* TOGGLE */
+/*--------*/
 @media (prefers-color-scheme:dark) {
 	:root {
         background-color: var(--color-background-2);
     }
 }
 
-/* Toggle Switch */
 .switch {
     position: absolute;
     display: inline-block;
@@ -95,15 +104,21 @@ header nav ul:nth-of-type(1) li:nth-of-type(3) {
     height: 34px;
 	top: 5em;
 	right: 1em;
-  }
-  
-  .switch input {
+}
+
+@media screen and (min-width: 1000px) {
+	.switch {
+		top: 10em;
+	}
+}
+
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
+}
   
-  .switch span {
+.switch span {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -113,9 +128,9 @@ header nav ul:nth-of-type(1) li:nth-of-type(3) {
     background-color: var(--color-kaartje-2);
     border-radius: 34px;
     transition: 0.4s;
-  }
+}
   
-  span:before {
+span:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -125,24 +140,26 @@ header nav ul:nth-of-type(1) li:nth-of-type(3) {
     background-color: var(--color-background);
     border-radius: 50%;
     transition: 0.4s;
-  }
+}
 
-  body.dark-mode .switch span:before {
+body.dark-mode .switch span:before {
     left: 30px;
 	background-color: var(--color-background-2);
-  }
+}
 
-  body.dark-mode {
+body.dark-mode {
     background-color: var(--color-background-2);
-  }
+}
 
-  body header nav ul.dark-mode {
+body header nav ul.dark-mode {
 	background-color: var(--color-background-2);
-  }
+}
 
-  
 
-/* Hamburger menu div */
+
+/*----------------*/
+/* HAMBURGER MENU */
+/*----------------*/
 header nav div {
 	background-color: rgb(21, 21, 29);
 	position: fixed;
@@ -267,15 +284,18 @@ header nav div ul:nth-of-type(5) li {
 	display: flex;
 }
 
+/* https://www.w3schools.com/css/css3_mediaqueries.asp */
 @media screen and (min-width: 1000px) {
 	header nav {
 		display: none;
 	}
 }
 
-/* -----------*/
-/* Groot menu */
-/* -----------*/
+
+
+/* --------------------*/
+/* HEADER GROOT SCHERM */
+/* --------------------*/
 .grootMenu {
 	position: relative;
 	z-index: 1;
@@ -388,10 +408,10 @@ header nav div ul:nth-of-type(5) li {
 }
 
 
-/* ---------------------------*/
-/* Header Carousel Homepagina */
-/* ---------------------------*/
 
+/* --------------------------*/
+/* EERSTE CAROUSEL ONDER NAV */
+/* --------------------------*/
 .headerCarouselHome {
 	margin: 4em 0 0 0;
 	border-left: solid 0.8em rgb(102, 3, 0);
@@ -417,6 +437,7 @@ header nav div ul:nth-of-type(5) li {
 .headerCarouselHome article div p:nth-of-type(2){
 	display: flex;
 	justify-content: center;
+	text-align: center;
 	font-size: 1.3em;
 	font-weight: 700;
 }
@@ -425,13 +446,10 @@ header nav div ul:nth-of-type(5) li {
 	margin: 1em 2em 0 2em;
 	display: flex;
 	justify-content: center;
-	text-align: center;
 	font-size: 0.8em;
 }
 
-
 /* Bekijk nu */
-
 .headerCarouselHome article div a {
 	background-color: red;
 	padding: 0 1.5em 0 1em;
@@ -553,11 +571,9 @@ header nav div ul:nth-of-type(5) li {
 
 
 
-/*--------*/
-/* Main 1 */
-/*--------*/
-
-
+/*---------------*/
+/* MAIN PAGINA 1 */
+/*---------------*/
 
 /* WeekendExpansie */
 .weekendExpansie {
@@ -565,7 +581,11 @@ header nav div ul:nth-of-type(5) li {
 	padding-bottom: 2em;
 }
 
+
+
+/*----*/
 /* H1 */
+/*----*/
 .abonneren {
 	display: flex;
 	justify-content: center;
@@ -593,7 +613,9 @@ h1 {
 
 
 
-/* Carousel 2 */
+/*-------------------*/
+/* ABONNEER CAROUSEL */
+/*-------------------*/
 .abonneerCarousel article:nth-of-type(1) {
 	display: grid;
 }
@@ -621,7 +643,7 @@ h1 {
 
 
 
-/* Carousel 2 buttons */
+/* Abonneer carousel buttons */
 .abonneerCarousel ul {
 	display: flex;
 	justify-content: center;
@@ -679,7 +701,9 @@ h1 {
 
 
 
-/* Schema */
+/*----------------*/
+/* UITKLAP SCHEMA */
+/*----------------*/
 .schema ul {
 	display: flex;
 	margin: 1em 0.5em 1em 0.5em;
@@ -737,7 +761,7 @@ h1 {
 	margin: 2em 2em 0 2em;
 	border-top: solid 5px red;
 	border-right: solid 5px red;
-	border-radius: 30px;
+	border-top-right-radius: 30px; /* Kan toch wel!! :), https://www.w3schools.com/cssref/css3_pr_border-top-right-radius.php */
 }
 
 .schema details div ul:nth-of-type(1) {
@@ -889,7 +913,11 @@ div.schemaKaartje {
 	}
   }
 
-/* Vormgeving alle 'Bekijk alles!' anchors */
+
+
+/*-----------------------------*/
+/* ALLE 'BEKIJK ALLES' ANCHORS */
+/*-----------------------------*/
 .bekijkAlles {
 	color: white;
 	font-size: 0.7em;
@@ -897,7 +925,11 @@ div.schemaKaartje {
 	text-decoration: none;
 }
 
-/* KaartjeWeekend */
+
+
+/*--------------------------------------*/
+/* UITGELICHTE ARTIKEL WEEKEND EXPANSIE */
+/*--------------------------------------*/
 .kaartjeWeekend {
 	display: flex;
 	flex-direction: column;
@@ -924,8 +956,6 @@ div.schemaKaartje {
 .kaartjeWeekend h2 {
 	margin-bottom: 0.5em;
 }
-
-
 
 /* KaartjeWeekend - kaartje */
 .kaartjeWeekend article {
@@ -956,7 +986,9 @@ div.schemaKaartje {
 
 
 
-/* CarouselVerticaal */
+/*--------------------------------------*/
+/* UITGELICHTE CONTENT WEEKEND EXPANSIE */
+/*--------------------------------------*/
 .carouselVerticaal {
 	margin: 3em;
 	padding: 0;
@@ -973,8 +1005,6 @@ div.schemaKaartje {
 .carouselVerticaal h2 {
 	font-size: 1em;
 }
-
-
 
 .carouselVerticaal article {
 	display: grid;
@@ -1032,7 +1062,11 @@ div.schemaKaartje {
 	}
   }
 
-/* 'Meer' knop */
+
+
+/*-------------*/
+/* 'MEER' KNOP */
+/*-------------*/
 .meer {
 	display: flex;
 	justify-content: center;
@@ -1049,7 +1083,9 @@ div.schemaKaartje {
 
 
 
-/* CarouselHorizontaal */
+/*------------------------------------*/
+/* UITGELICHTE CONTENT GROTE CAROUSEL */
+/*------------------------------------*/
 .carouselHorizontaal {
 	position: relative;
 	margin: 3em;
@@ -1123,7 +1159,9 @@ div.schemaKaartje {
 
 
 
-/* Kaartje */
+/*---------------------*/
+/* UITGELICHTE ARTIKEL */
+/*---------------------*/
 .kaartje {
 	display: flex;
 	flex-direction: column;
@@ -1182,7 +1220,9 @@ div.schemaKaartje {
 
 
 
-/* CarouselHorizontaalKlein */
+/*--------*/
+/* UITGELICHTE CONTENT KLEINE CAROUSEL */
+/*--------*/
 .carouselHorizontaalKlein {
 	position: relative;
 	margin: 3em;
@@ -1283,23 +1323,43 @@ div.schemaKaartje {
 }
 
 
-/*--------*/
-/* Main 2 */
-/*--------*/
 
+/*---------------*/
+/* MAIN PAGINA 2 */
+/*---------------*/
 .videoSectie {
-	margin: 5em 1em 1em 1em;
+	margin: 1em 1em 1em 1em;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .videoSectie iframe {
+	margin-top: 4em;
 	width: 100%;
-	min-height: auto;
+	max-width: 60em;
+	height: 55vw;
+	max-height: 32em;
+}
+
+@media screen and (min-width: 1000px) {
+	.videoSectie iframe {
+	  margin-top: 1em;
+	}
 }
 
 .videoSectie ul {
 	display: flex;
 	flex-direction: column;
-	margin: 0.5em 2em 0 2em;
+	margin: 0.5em auto 0 1em;
+	max-width: 60em;
+}
+
+@media screen and (min-width: 1000px) {
+	.videoSectie ul {
+	  padding-left: 18vw;
+	}
 }
 
 .videoSectie ul li h1 {
@@ -1360,7 +1420,7 @@ div.schemaKaartje {
 
 
 /*--------*/
-/* Footer */
+/* FOOTER */
 /*--------*/
 
 footer {

@@ -34,6 +34,6 @@ themaToggle.addEventListener('click', veranderThema);
 
 function veranderThema() {
     body.classList.toggle("dark-mode");
-    header.classList.toggle("dark-mode")
+    header.classList.toggle("dark-mode");
     console.log("Thema veranderd")
 }

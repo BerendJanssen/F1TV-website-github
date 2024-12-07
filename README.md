@@ -231,19 +231,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-To Do:
+  ### To Do laatste week:
   - Svg's voor standaard modus stylen in css
   - Roots aanmaken voor kleuren op pagina           (check)
   - Animatie hamburger menu sluiten                 (check)
   - Hamburgermenu responsive tot bepaalde grootte   (check)
-  - Carousellen
-  - Repsonsive maken
-  - Dark mode (has()) + toggle zou mooi zijn 
+  - Carousellen                                     (check)
+  - Repsonsive maken                                (check)
+  - Dark mode + toggle zou mooi zijn                (check)
   - Video & geluid embedden pagina 2?               (check)
-  - On hover en en click toevoegen buttons & links
+  - On hover en on click toevoegen knoppen
   - Zoekbalk waarin je kan typen
-  - Toetsenbord shortcuts
-  - Afbeeldingen vervangen voor hogere kwaliteit?
+  - Toetsenbord shortcuts 
+  - Afbeeldingen vervangen voor hogere kwaliteit?   (nee)
   - Logo klikbaar maken voor naar homepagina        (check)
 
 
@@ -269,10 +269,22 @@ To Do:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - Grid - autofit - min/max voor responsive grid
+  - Grid - autofit - min/max voor responsive grid 
   - Media query alleen om browser te overschrijven wanneer het niet naar wens verloopt
   - Before of after met svg
   - Teams kijken carousel
+
+  ### To Do laatste dag:
+  - Schema carousel
+  - Dark mode verbeteren
+  - Carousellen klikbaar
+  - Verticale uitgelichte content horizontaal zetten na 1000px
+  - Geanimeerde live tag op Race zetten
+  - Knoppen on:hover geven
+  - Toetsenbord shortcuts
+  - Zoekbalk waarin je kan typen
+  - TOEGANKELIJKHEID CHECKEN
+  - CODE VALIDEREN
 
 </details>
 
@@ -314,8 +326,21 @@ To Do:
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Code uit inspector F1TV website, https://f1tv.formula1.com/
+  2. Slides en oefeningen uit de les, zie DLO
+  3. Denny, Bahaa & Lisa
+  4. Overflow, MDN, https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
+  5. Spans, W3S, https://www.w3schools.com/tags/tag_span.asp
+  6. Grid gap, W3S, https://www.w3schools.com/cssref/css3_pr_gap.php
+  7. Transform, MDN, https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+  8. Achtergrond gradient, StackOverflow, https://stackoverflow.com/questions/15597167/css-opacity-gradient
+  9. Details tag, W3S, https://www.w3schools.com/tags/tag_details.asp
+  10. Media queries, W3S, https://www.w3schools.com/css/css3_mediaqueries.asp
+  11. Media queries, Team Treehouse, https://teamtreehouse.com/community/css-resizing-an-element-in-media-queries
+  12. Carousellen met alleen CSS, CSS Tricks, https://css-tricks.com/css-only-carousel/
+  13. Hide scroll bar, W3S, https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
+  14. Border-top-right-radius, W3S, https://www.w3schools.com/cssref/css3_pr_border-top-right-radius.php
+  15. Video embedden, Google, https://support.google.com/youtube/answer/171780?hl=en
+
 
 </details>
