@@ -6,6 +6,7 @@
 	--color-background: #15151D;
 	--color-background-2: #000000;
 	--color-background-3: #660301;
+	--color-background-4: #FFFFFF;
 	--color-schemacarousel: #1B0100;
 	--color-kaartje-1: #301A1D;
 	--color-kaartje-2: #23232C;
@@ -109,7 +110,7 @@ header nav ul:nth-of-type(1) li:nth-of-type(3) {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--color-background);
+    background-color: var(--color-kaartje-2);
     border-radius: 34px;
     transition: 0.4s;
   }
@@ -121,13 +122,14 @@ header nav ul:nth-of-type(1) li:nth-of-type(3) {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: #000;
+    background-color: var(--color-background);
     border-radius: 50%;
     transition: 0.4s;
   }
 
   body.dark-mode .switch span:before {
     left: 30px;
+	background-color: var(--color-background-2);
   }
 
   body.dark-mode {
@@ -265,8 +267,130 @@ header nav div ul:nth-of-type(5) li {
 	display: flex;
 }
 
+@media screen and (min-width: 1000px) {
+	header nav {
+		display: none;
+	}
+}
 
+/* -----------*/
+/* Groot menu */
+/* -----------*/
+.grootMenu {
+	position: relative;
+	z-index: 1;
+}
+
+.grootMenu ul:nth-of-type(1) {
+	background-color: var(--color-background-4);
+	color: var(--color-text-3);
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0.2em 8% 0 8%;
+}
+
+.grootMenu ul:nth-of-type(1) img {
+	width: 8em;
+	padding: 0 1em 0 1em;
+	border-left: solid 1px var(--color-text-2);
+	border-right: solid 1px var(--color-text-2);
+}
+
+.grootMenu ul:nth-of-type(1) li {
+	padding-top: 0.6em;
+}
+
+.grootMenu ul:nth-of-type(1) li p {
+	font-size: 0.8em;
+}
+
+.grootMenu ul:nth-of-type(1) li button {
+	width: 10em;
+	padding: 0.6em 0.8em 0.6em 0.8em;
+	border-radius: 5px;
+	border: none;
+	font-size: 0.75em;
+	font-weight: 550;
+}
+
+.grootMenu ul:nth-of-type(1) li:nth-of-type(7) {
+	padding-top: 0.2em;
+}
+
+.grootMenu ul:nth-of-type(1) li:nth-of-type(7) button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color-background);
+	color: var(--color-text);	
+}
+
+.grootMenu ul:nth-of-type(1) li:nth-of-type(7) button svg {
+	margin-right: 0.5em;
+}
+
+.grootMenu ul:nth-of-type(1) li:nth-of-type(8) {
+	padding-top: 0.2em;
+}
+
+.grootMenu ul:nth-of-type(1) li:nth-of-type(8) button {
+	background-color: red;
+	color: var(--color-text);
+	padding: 0.72em 0.8em 0.72em 0.8em;
+}
+
+.grootMenu ul:nth-of-type(2) {
+	background-color: var(--color-background-4);
+	color: var(--color-text-2);
+	display: flex;
+	padding: 1em 8% 1em 10%;
+}
+
+.grootMenu ul:nth-of-type(2) li {
+	margin: 0 1em 0 1em;
+}
+
+.grootMenu ul:nth-of-type(2) li p {
+	font-weight: 550;
+}
+
+.grootMenu ul:nth-of-type(3) {
+	background-color: var(--color-background);
+	color: var(--color-text-1);
+	display: flex;
+	justify-content: space-evenly;
+	padding: 1em 8% 0 8%;
+}
+
+.grootMenu ul:nth-of-type(3) img {
+	width: 11em;
+	margin-right: 2em;
+}
+
+.grootMenu ul:nth-of-type(3) p {
+	font-size: 0.95em;
+	font-weight: 530;
+	margin-top: 0.3em;
+}
+
+.grootMenu ul:nth-of-type(3) li:nth-of-type(8) button {
+	background: none;
+	border: none;
+	padding: 0.2em 0 0 0;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+	.grootMenu {
+		display: none;
+	}
+}
+
+
+/* ---------------------------*/
 /* Header Carousel Homepagina */
+/* ---------------------------*/
 
 .headerCarouselHome {
 	margin: 4em 0 0 0;
@@ -380,7 +504,52 @@ header nav div ul:nth-of-type(5) li {
 	  max-width: 720px;
 	  margin: 0 auto 0 auto;
 	}
-  }
+}
+
+@media screen and (min-width: 1000px) {
+	.headerCarouselHome {
+	  max-width: 90vw;
+	  max-height: 40vw
+	}
+	.headerCarouselHome article div {
+		display: flex;
+		justify-content: space-evenly;
+		width: 35em;
+		height: 40vw;
+		background: linear-gradient(270deg, rgba(21, 21, 29, 0.00) 3.53%, #15151D 49.82%);
+		translate: 0 -100%;
+	}
+	.headerCarouselHome article div p:nth-of-type(1) {
+		display: flex;
+		justify-content: left;
+		margin: 3em 0 0 2em;
+	}
+	.headerCarouselHome article div p:nth-of-type(2) {
+		display: flex;
+		justify-content: left;
+		margin: 2em 0 0 1.2em;
+	}
+	.headerCarouselHome article div p:nth-of-type(3) {
+		display: flex;
+		justify-content: left;
+		margin: 2em 2em 0 2em;
+		max-width: 20em;
+	}
+	.headerCarouselHome article div a {
+		display: flex;
+		justify-content: center;
+		margin: 3em auto 6em 5em;
+	}
+	.headerCarouselHome article div a p:nth-of-type(1){
+		margin: 0;
+	}
+	.headerCarouselHome article ul {
+		height: 40vw;
+		translate: 0 -120%;
+		background: none;
+	}
+
+}  
 
 
 
