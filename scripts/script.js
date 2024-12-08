@@ -37,3 +37,11 @@ function veranderThema() {
     header.classList.toggle("dark-mode");
     console.log("Thema veranderd")
 }
+
+// Shortcut - x sluit hamburgermenu
+// Niet aan de praat kunnen krijgen met escape, geen idee waarom niet
+document.addEventListener('keypress', function (event) {
+    if (event.key === 'x') {
+        sluitMenu()
+    }
+})

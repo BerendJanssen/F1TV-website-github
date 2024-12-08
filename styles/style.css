@@ -88,75 +88,6 @@ header nav ul:nth-of-type(1) li:nth-of-type(3) {
 
 
 
-/*--------*/
-/* TOGGLE */
-/*--------*/
-@media (prefers-color-scheme:dark) {
-	:root {
-        background-color: var(--color-background-2);
-    }
-}
-
-.switch {
-    position: absolute;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-	top: 5em;
-	right: 1em;
-}
-
-@media screen and (min-width: 1000px) {
-	.switch {
-		top: 10em;
-	}
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-  
-.switch span {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--color-kaartje-2);
-    border-radius: 34px;
-    transition: 0.4s;
-}
-  
-span:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: var(--color-background);
-    border-radius: 50%;
-    transition: 0.4s;
-}
-
-body.dark-mode .switch span:before {
-    left: 30px;
-	background-color: var(--color-background-2);
-}
-
-body.dark-mode {
-    background-color: var(--color-background-2);
-}
-
-body header nav ul.dark-mode {
-	background-color: var(--color-background-2);
-}
-
-
-
 /*----------------*/
 /* HAMBURGER MENU */
 /*----------------*/
@@ -221,7 +152,7 @@ header nav div ul:nth-of-type(2) li {
 header nav div ul:nth-of-type(2) li:nth-of-type(1) {
 	border-bottom: solid 1.5px white;
 	border-right: solid 1.5px white;
-	border-radius: 5px;
+	border-bottom-right-radius: 10px;
 }
 
 /* Derde ul hamburger menu */
@@ -242,8 +173,18 @@ header nav div ul:nth-of-type(3) li button {
 	border: none;
 }
 
+header nav div ul:nth-of-type(3) li:nth-of-type(1) button:hover {
+	background-color: rgb(183, 183, 183);
+	color: rgb(0, 0, 0);
+}
+
 header nav div ul:nth-of-type(3) li:nth-of-type(2) button {
 	background-color: red;
+	color: white;
+}
+
+header nav div ul:nth-of-type(3) li:nth-of-type(2) button:hover {
+	background-color: rgb(255, 98, 98);
 	color: white;
 }
 
@@ -251,6 +192,10 @@ header nav div ul:nth-of-type(3) li:nth-of-type(3) button {
 	background-color: rgb(21, 21, 29);
 	color: white;
 	border: solid 0.01px rgb(150, 150, 150);
+}
+
+header nav div ul:nth-of-type(3) li:nth-of-type(3) button:hover {
+	background-color: rgb(38, 38, 50);
 }
 
 /* Vierde ul hamburger menu */
@@ -345,6 +290,11 @@ header nav div ul:nth-of-type(5) li {
 	color: var(--color-text);	
 }
 
+.grootMenu ul:nth-of-type(1) li:nth-of-type(7) button:hover {
+	background-color: rgb(38, 38, 50);
+	color: var(--color-text);	
+}
+
 .grootMenu ul:nth-of-type(1) li:nth-of-type(7) button svg {
 	margin-right: 0.5em;
 }
@@ -357,6 +307,10 @@ header nav div ul:nth-of-type(5) li {
 	background-color: red;
 	color: var(--color-text);
 	padding: 0.72em 0.8em 0.72em 0.8em;
+}
+
+.grootMenu ul:nth-of-type(1) li:nth-of-type(8) button:hover {
+	background-color: rgb(255, 98, 98);
 }
 
 .grootMenu ul:nth-of-type(2) {
@@ -404,6 +358,133 @@ header nav div ul:nth-of-type(5) li {
 @media screen and (max-width: 1000px) {
 	.grootMenu {
 		display: none;
+	}
+}
+
+
+
+/*--------*/
+/* TOGGLE */
+/*--------*/
+@media (prefers-color-scheme:dark) {
+	:root {
+        background-color: var(--color-background-2);
+    }
+}
+
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+	top: 5em;
+	right: 1em;
+}
+
+@media screen and (min-width: 1000px) {
+	.switch {
+		top: 10em;
+	}
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.switch span {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-kaartje-2);
+    border-radius: 34px;
+    transition: 0.4s;
+}
+  
+span:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--color-background);
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+body.dark-mode .switch span:before {
+    left: 30px;
+	background-color: var(--color-background-2);
+}
+
+body.dark-mode {
+    background-color: var(--color-background-2);
+}
+
+body header nav ul.dark-mode {
+	background-color: var(--color-background-2);
+}
+
+/*----------*/
+/* LIVE TAG */
+/*----------*/
+.headerCarouselHome article .live {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	translate: 0 -4.2em;
+	background: none;
+	background-color: rgb(83, 152, 255);
+}
+
+.headerCarouselHome article .live img {
+	position: fixed;
+	width: 12px;
+	height: 12px;
+	margin: 0.6em 0 0 0.5em;
+	animation-name: live;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.headerCarouselHome article .live p {
+	padding: 0.5em 1em 0em 2em;
+}
+
+
+/* Animatie bolletje in live tag */
+@keyframes live {
+	0% {transform: scale(0.9);}
+	50% {transform: scale(1.1);}
+	100% {transform: scale(0.9);}
+}
+
+@media screen and (min-width: 1000px) {
+	.headerCarouselHome article .live {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		z-index: 1;
+		width: 4.5em;
+		height: 2.5em;
+	}
+	.headerCarouselHome article .live img {
+		position: fixed;
+		width: 12px;
+		height: 12px;
+		margin: 0.7em 0 0 -2em;
+		animation-name: live;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+	}
+	.headerCarouselHome article .live p:nth-of-type(1) {
+		padding: 0.7em 1em 0em 3em;
+		margin: 0;
 	}
 }
 
@@ -611,6 +692,10 @@ h1 {
 	background-color: red;
 }
 
+.abonneren button:hover {
+	background-color: rgb(255, 98, 98);
+}
+
 
 
 /*-------------------*/
@@ -684,6 +769,10 @@ h1 {
 	background-color: red;
 }
 
+.abonneerCarousel button:hover {
+	background-color: rgb(255, 98, 98);
+}
+
 .abonneerCarousel ul li button {
 	border: solid 6px rgb(39, 39, 48);
 	border-radius: 100%;
@@ -729,16 +818,18 @@ h1 {
 
 .schema details summary {
 	display: flex;
-	justify-content: center;
-}
-
-.schema details summary button {
-	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	background-color: white;
 	color: black;
+	width: 12em;
+	margin: 0 auto 0 auto;
 	padding: 0.6em 1.5em 0.6em 1.5em;
 	border-radius: 72px;
+}
+
+.schema details summary:hover {
+	background-color: rgb(182, 182, 182);
 }
 
 .schema details > summary {
@@ -747,7 +838,7 @@ h1 {
 }
 
 .schema details summary p {
-	margin: 0.3em 0.6em 0 1em;
+	margin: 0 0.6em 0 1em;
 	font-size: 1.2em;
 	font-weight: 600;
 }
@@ -758,9 +849,9 @@ h1 {
 
 /* Uitklap gebeuren */
 .schema details div {
-	margin: 2em 2em 0 2em;
-	border-top: solid 5px red;
-	border-right: solid 5px red;
+	margin: 3em 2em 0 2em;
+	border-top: solid 10px red;
+	border-right: solid 10px red;
 	border-top-right-radius: 30px; /* Kan toch wel!! :), https://www.w3schools.com/cssref/css3_pr_border-top-right-radius.php */
 }
 
@@ -800,17 +891,24 @@ h1 {
 	background: none;
 }
 
-/* SchemaCarousel */
+/* SchemaCarousel - bepalen van grid */
 .schema details section {
 	background-color: var(--color-schemacarousel);
 	border: none;
-	margin: 0 1em 1em 1em;
+	margin: 0;
 	padding: 1em;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	width: 90vw;
+	column-gap: 2em;
+	row-gap: 0.4em;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto auto;
+	width: 100%;
+	height: fit-content;
 	overflow: scroll;
+}
+
+.schema details section::-webkit-scrollbar {
+	display: none;
 }
 
 .schema details section p:nth-of-type(1) {
@@ -820,16 +918,27 @@ h1 {
 	grid-row-end: 2;
 }
 
-div.schemaKaartje {
+body .schema details div.schemaKaartje {
 	border: none;
 }
 
-.schemaKaartje:nth-of-type(1) {
+.schema details .schemaKaartje:nth-of-type(1) {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0.6em 1em 0.6em 1em;
 	grid-column-start: 1;
 	grid-column-end: 2;
 	grid-row-start: 2;
 	grid-row-end: 3;
+
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
+}
+
+.schema details .schemaKaartje:nth-of-type(1) p:nth-of-type(2) {
+	padding: 0 4em 0 4em;
 }
 
 .schema details section p:nth-of-type(2) {
@@ -839,55 +948,119 @@ div.schemaKaartje {
 	grid-row-end: 2;
 }
 
-.schemaKaartje:nth-of-type(2) {
+.schema details .schemaKaartje:nth-of-type(2) {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0.6em 1em 0.6em 1em;
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 2;
 	grid-row-end: 3;
+
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
 }
 
-.schemaKaartje:nth-of-type(3) {
+.schema details .schemaKaartje:nth-of-type(2) p:nth-of-type(2) {
+	padding: 0 4em 0 4em;
+}
+
+.schema details .schemaKaartje:nth-of-type(3) {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0.6em 1em 0.6em 1em;
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 3;
 	grid-row-end: 4;
+
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
 }
 
-.schemaKaartje:nth-of-type(4) {
+.schema details .schemaKaartje:nth-of-type(3) p:nth-of-type(2) {
+	padding: 0.7em 4em 0.7em 4em;
+}
+
+.schema details .schemaKaartje:nth-of-type(4) {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0.6em 1em 0.6em 1em;
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 4;
 	grid-row-end: 5;
+
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
 }
 
-.schemaKaartje:nth-of-type(5) {
+.schema details .schemaKaartje:nth-of-type(4) p:nth-of-type(2) {
+	padding: 0 4em 0 4em;
+}
+
+.schema details .schemaKaartje:nth-of-type(5) {
 	display: flex;
-	border: none;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0.6em 1em 0.6em 1em;
 	grid-column-start: 3;
 	grid-column-end: 4;
 	grid-row-start: 2;
 	grid-row-end: 3;
+
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
 }
 
-.schemaKaartje:nth-of-type(6) {
+.schema details .schemaKaartje:nth-of-type(5) p:nth-of-type(2) {
+	padding: 0 4em 0 4em;
+}
+
+
+.schema details .schemaKaartje:nth-of-type(6) {
 	display: flex;
-	border: none;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0.6em 1em 0.6em 1em;
 	grid-column-start: 3;
 	grid-column-end: 4;
 	grid-row-start: 3;
 	grid-row-end: 4;
+
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
 }
 
-.schemaKaartje:nth-of-type(7) {
+.schema details .schemaKaartje:nth-of-type(6) p:nth-of-type(2) {
+	padding: 0 4em 0 4em;
+}
+
+.schema details .schemaKaartje:nth-of-type(7) {
 	display: flex;
-	border: none;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0 1em 0 1em;
 	grid-column-start: 3;
 	grid-column-end: 4;
 	grid-row-start: 4;
 	grid-row-end: 5;
+
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
+}
+
+.schema details .schemaKaartje:nth-of-type(7) p:nth-of-type(2) {
+	padding: 0 4em 0 4em;
 }
 
 .schema details section p:nth-of-type(3) {
@@ -897,13 +1070,258 @@ div.schemaKaartje {
 	grid-row-end: 2;
 }
 
+.schema details .schemaKaartje:nth-of-type(8) {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0 1em 0 1em;
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 3;
 
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
+}
 
-.schema details section p:nth-of-type(4) {
+.schema details .schemaKaartje:nth-of-type(8) p:nth-of-type(2) {
+	padding: 0 4em 0 4em;
+}
+
+.schema details .schemaKaartje:nth-of-type(9) {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0 1em 0 1em;
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 3;
+	grid-row-end: 4;
+
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
+}
+
+.schema details .schemaKaartje:nth-of-type(9) p:nth-of-type(2) {
+	padding: 0 4em 0 4em;
+}
+
+.schema details .schemaKaartje:nth-of-type(10) {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0 1em 0 1em;
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 4;
+	grid-row-end: 5;
+
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
+}
+
+.schema details .schemaKaartje:nth-of-type(10) p:nth-of-type(2) {
+	padding: 0 4em 0 4em;
+}
+
+.schema details .schemaKaartje:nth-of-type(11) {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0 1em 0 1em;
+	grid-column-start: 5;
+	grid-column-end: 6;
+	grid-row-start: 2;
+	grid-row-end: 3;
+
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
+}
+
+.schema details .schemaKaartje:nth-of-type(11) p:nth-of-type(2) {
+	padding: 0 4em 0 4em;
+}
+
+.schema details .schemaKaartje:nth-of-type(12) {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0 1em 0 1em;
+	grid-column-start: 5;
+	grid-column-end: 6;
+	grid-row-start: 3;
+	grid-row-end: 4;
+
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
+}
+
+.schema details .schemaKaartje:nth-of-type(12) p:nth-of-type(2) {
+	padding: 0 4em 0 4em;
+}
+
+.schema details .schemaKaartje:nth-of-type(13) {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0 1em 0 1em;
+	grid-column-start: 5;
+	grid-column-end: 6;
+	grid-row-start: 4;
+	grid-row-end: 5;
+
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
+}
+
+.schema details .schemaKaartje:nth-of-type(13) p:nth-of-type(2) {
+	padding: 0 4em 0 4em;
+}
+
+.schema details .schemaKaartje:nth-of-type(14) {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0 1em 0 1em;
 	grid-column-start: 6;
 	grid-column-end: 7;
+	grid-row-start: 2;
+	grid-row-end: 3;
+
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
+}
+
+.schema details .schemaKaartje:nth-of-type(14) p:nth-of-type(2) {
+	padding: 0 4em 0 4em;
+}
+
+.schema details section p:nth-of-type(4) {
+	grid-column-start: 7;
+	grid-column-end: 8;
 	grid-row-start: 1;
 	grid-row-end: 2;
+}
+
+.schema details .schemaKaartje:nth-of-type(15) {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0 1em 0 1em;
+	grid-column-start: 7;
+	grid-column-end: 8;
+	grid-row-start: 2;
+	grid-row-end: 3;
+
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
+}
+
+.schema details .schemaKaartje:nth-of-type(15) p:nth-of-type(2) {
+	padding: 0 4em 0 4em;
+}
+
+.schema details .schemaKaartje:nth-of-type(16) {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0 1em 0 1em;
+	grid-column-start: 7;
+	grid-column-end: 8;
+	grid-row-start: 3;
+	grid-row-end: 4;
+
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
+}
+
+.schema details .schemaKaartje:nth-of-type(16) p:nth-of-type(2) {
+	padding: 0 4em 0 4em;
+}
+
+.schema details .schemaKaartje:nth-of-type(17) {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0 1em 0 1em;
+	grid-column-start: 7;
+	grid-column-end: 8;
+	grid-row-start: 4;
+	grid-row-end: 5;
+
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
+}
+
+.schema details .schemaKaartje:nth-of-type(17) p:nth-of-type(2) {
+	padding: 0 4em 0 4em;
+}
+
+.schema details .schemaKaartje:nth-of-type(18) {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0 1em 0 1em;
+	grid-column-start: 8;
+	grid-column-end: 9;
+	grid-row-start: 2;
+	grid-row-end: 3;
+
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
+}
+
+.schema details .schemaKaartje:nth-of-type(18) p:nth-of-type(2) {
+	padding: 0 4em 0 4em;
+}
+
+.schema details .schemaKaartje:nth-of-type(19) {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0 1em 0 1em;
+	grid-column-start: 8;
+	grid-column-end: 9;
+	grid-row-start: 3;
+	grid-row-end: 4;
+
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
+}
+
+.schema details .schemaKaartje:nth-of-type(19) p:nth-of-type(2) {
+	padding: 0 4em 0 4em;
+}
+
+.schema details .schemaKaartje:nth-of-type(20) {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0 1em 0 1em;
+	grid-column-start: 8;
+	grid-column-end: 9;
+	grid-row-start: 4;
+	grid-row-end: 5;
+
+	background-color: var(--color-background-3);
+	border-top-right-radius: 0;
+}
+
+.schema details .schemaKaartje:nth-of-type(20) p:nth-of-type(2) {
+	padding: 0 4em 0 4em;
 }
 
 @media screen and (min-width: 720px) {
@@ -925,6 +1343,9 @@ div.schemaKaartje {
 	text-decoration: none;
 }
 
+.bekijkAlles:hover {
+	color: var(--color-text-2);
+}
 
 
 /*--------------------------------------*/
@@ -1079,6 +1500,14 @@ div.schemaKaartje {
 	padding: 0.5em 2em 0.5em 2em;
 	border: solid 1px var(--color-text);
 	border-radius: 72px;
+}
+
+.meer:hover {
+	color: var(--color-text-2);
+}
+
+.meer:hover p {
+	border: solid 1px var(--color-text-2);
 }
 
 

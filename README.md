@@ -241,7 +241,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Dark mode + toggle zou mooi zijn                (check)
   - Video & geluid embedden pagina 2?               (check)
   - On hover en on click toevoegen knoppen
-  - Zoekbalk waarin je kan typen
   - Toetsenbord shortcuts 
   - Afbeeldingen vervangen voor hogere kwaliteit?   (nee)
   - Logo klikbaar maken voor naar homepagina        (check)
@@ -275,14 +274,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Teams kijken carousel
 
   ### To Do laatste dag:
-  - Schema carousel
+  - Schema carousel                                             (check)
   - Dark mode verbeteren
-  - Carousellen klikbaar
-  - Verticale uitgelichte content horizontaal zetten na 1000px
-  - Geanimeerde live tag op Race zetten
-  - Knoppen on:hover geven
-  - Toetsenbord shortcuts
-  - Zoekbalk waarin je kan typen
+  - Geanimeerde live tag op Race zetten                         (check)
+  - Knoppen on:hover geven                                      (check)
+  - Toetsenbord shortcuts                                       (soort van)
   - TOEGANKELIJKHEID CHECKEN
   - CODE VALIDEREN
 
