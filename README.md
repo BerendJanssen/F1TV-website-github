@@ -272,12 +272,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### To Do laatste dag:
   - Schema carousel                                             (check)
-  - Dark mode verbeteren
+  - Dark mode verbeteren                                        (niet voorbij 1000px)
   - Geanimeerde live tag op Race zetten                         (check)
   - Knoppen on:hover geven                                      (check)
   - Toetsenbord shortcuts                                       (soort van)
-  - TOEGANKELIJKHEID CHECKEN
-  - CODE VALIDEREN
+  - TOEGANKELIJKHEID CHECKEN                                    (check)
+  - CODE VALIDEREN                                              (check)
 
 </details>
 
