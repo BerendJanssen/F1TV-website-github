@@ -76,9 +76,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     niet het geval.
   - De knoppen om naar de app of play store te gaan worden gewoon voorgelezen als 'i-m-g'.
 
-  DETAILPAGINA
-  - 
-
 
   ### WCAG Analyse 1
   <img src="readme-images/WCAG-Analyse/WhatsApp Image 2024-12-06 at 12.12.25.jpeg" alt="WCAG analyse 1 pagina 1">

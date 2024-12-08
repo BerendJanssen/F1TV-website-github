@@ -1839,10 +1839,15 @@ body .schema details div.schemaKaartje {
 	display: flex;
 	flex-direction: row;
 	margin: 2em 0 2em 1em;
-	padding: 0.6em 2em 0.6em 1em;
+	padding: 0.6em 2em 0 1em;
 	background-color: #660301;
+	color: var(--color-text-1);
 	border: none;
 	border-radius: 72px;
+}
+
+.videoSectie ul li button svg {
+	padding-bottom: 0.5em;
 }
 
 .videoSectie ul li button p {
