@@ -515,7 +515,7 @@ body header nav ul.dark-mode {
 	font-weight: 650;
 }
 
-.headerCarouselHome article div p:nth-of-type(2){
+.headerCarouselHome article div h3 {
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -523,7 +523,7 @@ body header nav ul.dark-mode {
 	font-weight: 700;
 }
 
-.headerCarouselHome article div p:nth-of-type(3) {
+.headerCarouselHome article div p:nth-of-type(2) {
 	margin: 1em 2em 0 2em;
 	display: flex;
 	justify-content: center;
@@ -623,12 +623,12 @@ body header nav ul.dark-mode {
 		justify-content: left;
 		margin: 3em 0 0 2em;
 	}
-	.headerCarouselHome article div p:nth-of-type(2) {
+	.headerCarouselHome article div h3 {
 		display: flex;
 		justify-content: left;
 		margin: 2em 0 0 1.2em;
 	}
-	.headerCarouselHome article div p:nth-of-type(3) {
+	.headerCarouselHome article div p:nth-of-type(2) {
 		display: flex;
 		justify-content: left;
 		margin: 2em 2em 0 2em;
@@ -705,7 +705,7 @@ h1 {
 	display: grid;
 }
 
-.abonneerCarousel article:nth-of-type(1) p:nth-of-type(1) {
+.abonneerCarousel article:nth-of-type(1) h3 {
 	display: flex;
 	justify-content: center;
 	font-weight: 500;
@@ -717,7 +717,7 @@ h1 {
 	justify-self: center;
 }
 
-.abonneerCarousel article:nth-of-type(1) p:nth-of-type(2) {
+.abonneerCarousel article:nth-of-type(1) p {
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -837,6 +837,10 @@ h1 {
 	display: flex;
 }
 
+.schema details summary svg:nth-of-type(1) {
+	margin: 0 1em 0 0;
+}
+
 .schema details summary p {
 	margin: 0 0.6em 0 1em;
 	font-size: 1.2em;
@@ -844,7 +848,7 @@ h1 {
 }
 
 .schema details summary svg:nth-of-type(2) {
-	margin: 0.3em 0 0 0.3em;
+	margin: 0.3em 0 0 1em;
 }
 
 /* Uitklap gebeuren */
@@ -911,7 +915,7 @@ h1 {
 	display: none;
 }
 
-.schema details section p:nth-of-type(1) {
+.schema details section h4:nth-of-type(1) {
 	grid-column-start: 1;
 	grid-column-end: 2;
 	grid-row-start: 1;
@@ -941,7 +945,7 @@ body .schema details div.schemaKaartje {
 	padding: 0 4em 0 4em;
 }
 
-.schema details section p:nth-of-type(2) {
+.schema details section h4:nth-of-type(2) {
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 1;
@@ -1063,7 +1067,7 @@ body .schema details div.schemaKaartje {
 	padding: 0 4em 0 4em;
 }
 
-.schema details section p:nth-of-type(3) {
+.schema details section h4:nth-of-type(3) {
 	grid-column-start: 4;
 	grid-column-end: 5;
 	grid-row-start: 1;
@@ -1203,7 +1207,7 @@ body .schema details div.schemaKaartje {
 	padding: 0 4em 0 4em;
 }
 
-.schema details section p:nth-of-type(4) {
+.schema details section h4:nth-of-type(4) {
 	grid-column-start: 7;
 	grid-column-end: 8;
 	grid-row-start: 1;
